@@ -17,9 +17,9 @@ public class Example {
 	       List<String> pList = obj.displayList();
 
 //using for
-//	       for (int i = 0; i < pList.size(); i++) {
-//	    	   System.out.println(pList.get(i));
-//	       }
+	       //for (int i = 0; i < pList.size(); i++) {
+	       //  System.out.println(pList.get(i));
+	       //}
 	       
 //Using foreach
 	       for (String str : pList) {
@@ -64,7 +64,7 @@ public class Example {
 	       zList.add("jjj");
 	       
 	       System.out.println(zList );
-	        Collections.copy(zList, pList);
+	       Collections.copy(zList, pList);
 	       System.out.println(zList + "\n");
 
 	       System.out.println("Write a Java program to shuffle elements in a array list.");
@@ -91,8 +91,8 @@ public class Example {
 	       pList.addAll(zList);
 	       System.out.println(pList+ "\n");
 	       
-//System.out.println("Write a Java program to clone an array list to another array list.");
-//ArrayList<String> pArrayList = (ArrayList<String>) pList.clone();
+	       //System.out.println("Write a Java program to clone an array list to another array list.");
+	       //ArrayList<String> pArrayList = (ArrayList<String>) pList.clone();
 	
 	       System.out.println("Write a Java program to empty an array list.");
 	       pList.removeAll(pList);
@@ -100,7 +100,26 @@ public class Example {
            
 	       System.out.println(" Write a Java program to test an array list is empty or not");
 	       System.out.println(pList.isEmpty() + "\n");
+	      
+//ensureCapacity works for type ArrayList not for List
+	       //System.out.println("Write a Java program to increase the size of an array list.");
+	       //pList.ensureCapacity(10);
     
+	       
+	       
+	       // List methods
+	       // add(element), add(position, element), remove(position)
+	       // removeAll(list),  indexOf(element), get(index)
+	       // set(index, value), subList(starting index, no of elements)
+	       // list1.equals(list2), c1.addAll(c2) - joins, isEmpty()
+	       
+	       //Collections methods
+	       // Collections.sort(list), shuffle(list), reverse()
+	       // swap(list, Index1, Index2) copy(list1, list2)-must be same length before performing
+	       
+	       
+	    
+	
 	}
 
 }
